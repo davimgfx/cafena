@@ -221,3 +221,42 @@
   font-size: 24px;
   font-weight: 700;
 }
+
+.cards-type-review{
+  display: flex;
+  gap:10px;
+}
+
+.card-type-review{
+  width:  380px;
+  height: 208px;
+  border-radius: 15px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: #FFF9F1;
+  padding: 20px;
+  border: 1px solid var(--secondary-color);
+}
+
+.footer{
+  margin-top: 70px;
+  border-top: 1px solid var(--logo-color);
+  background-image: url("../assets/images/Bgfooter.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 492px;
+  background-color: rgb(96, 55, 9);
+  display: flex;
+  justify-content: flex-end; /* Cor de fundo com opacidade */
+}
+
+.footer .container {
+  align-self: flex-end;
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  background: #25181A80;
+}
