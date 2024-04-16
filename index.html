@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/colors.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/customScrollbar.css" />
     <title>Cafena Café</title>
   </head>
   <body>
@@ -21,10 +23,10 @@
             src="assets/logos/logo_with_name.png"
             alt="logo cafena café"
             class="logo" />
-          <a href="#">Inicio</a>
-          <a href="#">Nossos Cafés</a>
-          <a href="#">Loja</a>
-          <a href="#">Contato</a>
+          <a href="#hero">Inicio</a>
+          <a href="#options">Nosso Menu</a>
+          <a href="#shop">Loja</a>
+          <a href="#footer">Contato</a>
         </div>
         <div class="navbar-items">
           <img
@@ -57,7 +59,7 @@
     </section>
 
     <section class="menu pattern-width" id="options">
-      <h2>Nossos Cafés</h2>
+      <h2>Nossos Menu</h2>
       <div class="cards-type-1">
         <div class="card-type-1">
           <img src="assets/icons/machine.png" alt="icone da maquina expresso" />
@@ -86,7 +88,7 @@
       </div>
     </section>
 
-    <section class="options pattern-width" id="options">
+    <section class="options pattern-width" id="shop">
       <h2>Qual o seu apetite de hoje ?</h2>
       <div class="cards-type-2">
         <div class="card-type-2">
@@ -239,39 +241,82 @@
       <div class="pattern-width">
         <h2>Comentários de Clientes</h2>
         <div class="cards-type-review">
-          <div class="card-type-review">    
-              <p>Bart</p>
-              <img
-              src="assets/icons/stars.png"
-              alt="icone da maquina expresso" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis ullam reprehenderit laborum iusto, sunt officiis placeat debitis molestias! Nam vitae numquam minima qui pariatur, voluptas alias atque voluptatem repellendus?</p>  
-          </div>
-          <div class="card-type-review">    
+          <div class="card-type-review">
             <p>Bart</p>
-            <img
-            src="assets/icons/stars.png"
-            alt="icone da maquina expresso" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis ullam reprehenderit laborum iusto, sunt officiis placeat debitis molestias! Nam vitae numquam minima qui pariatur, voluptas alias atque voluptatem repellendus?</p>  
+            <img src="assets/icons/stars.png" alt="icone da maquina expresso" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque ipsum, quis autem laudantium in eos optio rerum minus temporibus!</p>
+          </div>
+          <div class="card-type-review">
+            <p>Bart</p>
+            <img src="assets/icons/stars.png" alt="icone da maquina expresso" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. itaque ipsum, quis autem laudantium in eos optio rerum minus temporibus!</p>
+          </div>
+          <div class="card-type-review">
+            <p>Bart</p>
+            <img src="assets/icons/stars.png" alt="icone da maquina expresso" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.itaque ipsum, quis autem laudantium in eos optio rerum minus temporibus!</p>
+          </div>
         </div>
-        <div class="card-type-review">    
-          <p>Bart</p>
-          <img
-          src="assets/icons/stars.png"
-          alt="icone da maquina expresso" />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis ullam reprehenderit laborum iusto, sunt officiis placeat debitis molestias! Nam vitae numquam minima qui pariatur, voluptas alias atque voluptatem repellendus?</p>  
-      </div>    
-        </div>
-      </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
-        <div class="pattern-width">
-          <img src="assets/logos/logo_with_name.png" class="logo" alt="">
-
+        <div class="pattern-width footer-container">
+          <div class="footer-container-infos">
+            <img src="assets/logos/logo_with_name.png" class="logo" alt="" />
+            <div class="footer-container-info">
+              <img src="assets/icons/local.png" alt="icone de localização" />
+              <p>Clique aqui para ver no Waze</p>
+            </div>
+            <div class="footer-container-info" id="email-text" onclick="copyEmail()">
+              <img src="assets/icons/email.png" alt="icone de email" />
+              <p>cafena.suporte@cafe.com</p>
+            </div>
+            <div
+              class="footer-container-info"
+              id="phone-number"
+              onclick="copyNumber()">
+              <img src="assets/icons/phone.png" alt="icone de localização" />
+              <p>(71) 99999-9999</p>
+            </div>
+            <p class="copyright">Todos os direitos reservados a Cafena Café</p>
+          </div>
+          <div class="footer-container-items">
+            <div class="footer-container-item">
+              <h2>Atendimento</h2>
+              <p>Horário de atendimento:</p>
+              <p>08:00 às 20:00</p>
+              <p>- Segunda a Sábado,</p>
+              <p>horário de Brasília</p>
+              <p>(Exceto domingo e feriados)</p>
+            </div>
+            <div class="footer-container-item">
+              <h2>Endereço</h2>
+              <p>
+                Rua Carlos Gomes, 1321 - 9° andar - Centro Limeira/SP - CEP:
+                13480-010
+              </p>
+            </div>
+          </div>
+          <div class="footer-container-payments">
+            <h2>Pagamentos</h2>
+            <div class="footer-container-payments-control">
+              <img
+                src="assets/payments/american 1.png"
+                alt="american pagamento" /><img
+                src="assets/payments/boleto 1.png"
+                alt="boleto pagamento" /><img
+                src="assets/payments/nubank 1.png"
+                alt="nubank pagamento" /><img
+                src="assets/payments/pix 1.png"
+                alt="pix pagamento" /><img
+                src="assets/payments/visa 1.png"
+                alt="visa pagamento" />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="js/footer/scripts.js"></script>
   </body>
 </html>
