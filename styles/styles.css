@@ -172,6 +172,7 @@
 }
 
 .banner {
+  position: relative;
   padding: 4rem 8rem;
   max-height: 20rem;
   margin: 7rem 0;
@@ -270,14 +271,13 @@
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px
+  gap: 30px;
 }
 
 .footer-container-infos {
   display: flex;
   gap: 30px;
   flex-direction: column;
-
 }
 
 .footer-container-info {
@@ -323,9 +323,30 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  
 }
 
-.footer-container-payments-images{
+.footer-container-payments-images {
   width: 10rem;
 }
+
+.white__gradient {
+  background: #7C573C;
+  filter: blur(750px);
+  width: 40%;
+  height: 84%;
+  border-radius: 999px;
+  position: absolute;
+  bottom: 10rem;
+  left: 0rem;
+}
+
+.white__gradient-2{
+  background: #7C573C;
+  filter: blur(750px);
+  width: 50%;
+  height: 84%;
+  border-radius: 999px;
+  position: absolute;
+  bottom: 0rem;
+  left: -10rem;
+} 
