@@ -1,0 +1,108 @@
+@media (max-width: 1380px) {
+  .pattern-width {
+    max-width: auto;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .hero-div {
+    padding: 0 2rem;
+  }
+  .footer {
+    height: 100%;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-container-infos .logo {
+    margin: 0 auto;
+  }
+  .footer-container-infos {
+    justify-content: center;
+  }
+  .footer-container-payments-control {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pattern-width {
+    max-width: auto;
+    width: auto;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .hero {
+    width: auto;
+    padding-bottom: 0;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .hero-div {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .hero-div-text .button {
+    margin: 0 auto;
+  }
+  .menu {
+    padding: 0 2rem;
+  }
+  .menu h2 {
+    text-align: center;
+  }
+  .cards-type-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .options {
+    padding: 0 2rem;
+  }
+  .options h2 {
+    text-align: center;
+  }
+  .cards-type-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .more-order h2 {
+    text-align: center;
+  }
+  .banner {
+    border-radius: 0;
+  }
+  .review h2{
+    text-align: center;
+  }
+  .cards-type-review{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-item {
+    display: none;
+  }
+  .banner {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-image-coffee {
+    width: 100%;
+  }
+
+  .card-type-review{
+    width: auto;
+    margin: 0 2rem;
+  }
+}
